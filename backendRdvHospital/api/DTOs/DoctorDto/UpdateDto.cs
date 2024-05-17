@@ -30,7 +30,7 @@ namespace api.DTOs.DoctorDto
         [Required]
         public string? Address { get; set; }
 
-        
+        public IFormFile? Image { get; set; }
         
         
     }

@@ -19,6 +19,7 @@ namespace api.Mappers
                 Telephone = patient.Telephone,
                 Address = patient.Address,
                 Age = DateTime.Today.Year-patient.BirthDate.Year,
+                BirthDate = patient.BirthDate.Date.Date,
                 Image = patient.Image,
             };
         }

@@ -56,7 +56,7 @@ namespace api.Controllers
         }
         [HttpPut]
         [Route("{id}")]
-        public async Task<IActionResult> UpdateDoctor([FromRoute] string id, [FromBody] UpdateDto updateDto){
+        public async Task<IActionResult> UpdateDoctor([FromRoute] string id, [FromForm]  UpdateDto updateDto){
             if(!ModelState.IsValid)
                 return BadRequest(ModelState);
             

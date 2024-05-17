@@ -53,7 +53,7 @@ namespace api.Controllers
 
         [HttpPut]
         [Route("{id}")]
-        public async Task<IActionResult> Update([FromRoute] string id, [FromBody] UpdatePatientDto patientDto){
+        public async Task<IActionResult> Update([FromRoute] string id, [FromForm] UpdatePatientDto patientDto){
             if(!ModelState.IsValid)
                 return BadRequest(ModelState);
             
@@ -61,7 +61,7 @@ namespace api.Controllers
 
             if(doctorModel == null)
                 return NotFound();
-            return Ok(doctorModel);
+            return Ok(doctorModel.ToPatientDto());
         }
     }
 }

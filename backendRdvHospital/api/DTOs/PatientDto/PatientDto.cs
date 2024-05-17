@@ -16,6 +16,8 @@ namespace api.DTOs.PatientDto
         public string? Telephone { get; set; }
         public string? Address { get; set; }
         public int Age { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime BirthDate { get; set; }
         public string? Image { get; set; }
     }
 }

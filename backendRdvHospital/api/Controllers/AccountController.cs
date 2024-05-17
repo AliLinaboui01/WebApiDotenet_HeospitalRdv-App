@@ -126,7 +126,7 @@ namespace api.Controllers
                     return BadRequest(ModelState);
                 string imageUploaded ="http://localhost:5299/Uploads/DefaultImage/userProfile.png";
                 if(rgisterPatientDto.Image!=null){
-                    imageUploaded =  "http://localhost:5299/Uploads/Patients"+_imageService.UploadImage("Patient",rgisterPatientDto.Image);
+                    imageUploaded =  "http://localhost:5299/Uploads/Patients/"+_imageService.UploadImage("Patient",rgisterPatientDto.Image);
                 }
 
                 var createdPatient = new Patient

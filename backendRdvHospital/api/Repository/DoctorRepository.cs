@@ -17,10 +17,12 @@ namespace api.Repository
     {
         private readonly DataContext _dataContext;
         private readonly UserManager<User> _userManager;
-        public DoctorRepository(DataContext dataContext, UserManager<User> userManager)
+        private readonly IImageService _imageService;
+        public DoctorRepository(DataContext dataContext, UserManager<User> userManager, IImageService imageService)
         {
             _dataContext = dataContext;
             _userManager = userManager;
+            _imageService = imageService;
         }
 
         public async Task<Doctor?> DeleteDoctorAync(string id)
@@ -77,11 +79,14 @@ namespace api.Repository
             existingDoctor.Telephone = updateDto.Telephone!;
             var newPasswordHash = _userManager.PasswordHasher.HashPassword(existingDoctor, updateDto.Password!);
             existingDoctor.PasswordHash = newPasswordHash;
-
+            
             var normalizedEmail =  _userManager.NormalizeEmail(updateDto.Email);
             existingDoctor.NormalizedEmail = normalizedEmail;
             var normalizedUserName =  _userManager.NormalizeName(updateDto.UserName);
             existingDoctor.NormalizedUserName = normalizedUserName;
+            if(updateDto.Image!=null){
+                existingDoctor.Image = "http://localhost:5299/Uploads/Doctors/"+_imageService.UploadImage("Doctor",updateDto.Image);
+            }
             await _dataContext.SaveChangesAsync();
 
             return existingDoctor;

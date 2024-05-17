@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aaPgyx9vubd8ykXw0y+/8gp1V1S1q6DVgKo6uxj6Bbj1cJ1YOG13R7BZBaveME8HA4ip1ucZM7EqWPGgdRoEwg==",
+  "dgSpecHash": "ObljI+0GH5DsVGB6JcVMkLVUi2cvd8d6aTqhNhjTAVoxmI/sGQKhTGZJDKFHVjwEa42z3s7rrvOz8yvVtzTCag==",
   "success": true,
-  "projectFilePath": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\RestApiDotnet_HospitalApp\\backendRdvHospital\\api\\api.csproj",
+  "projectFilePath": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\newBackendRes\\WebApiDotenet_HeospitalRdv-App\\backendRdvHospital\\api\\api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL VOS\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\DELL VOS\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

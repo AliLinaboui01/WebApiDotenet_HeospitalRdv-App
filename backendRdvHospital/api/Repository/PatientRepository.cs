@@ -15,10 +15,12 @@ namespace api.Repository
     {
         private readonly DataContext _dataContext;
         private readonly UserManager<User> _userManager;
-        public PatientRepository(DataContext dataContext, UserManager<User> userManager)
+        private readonly IImageService _imageService;
+        public PatientRepository(DataContext dataContext, UserManager<User> userManager, IImageService imageService)
         {
             _dataContext = dataContext;
              _userManager = userManager;
+             _imageService = imageService;
         }
 
         public async Task<Patient?> DeletePatientAync(string id)
@@ -31,10 +33,10 @@ namespace api.Repository
             }
             // Fetch all RDV records associated with the doctor
             var rdvs = await _dataContext.RDVs.Where(r => r.PatientId == id).ToListAsync();
-
+            var doctorSchedules = await _dataContext.DoctorScheduels.Where(ds=>ds.PatientId==id).ToListAsync();
             // Delete all associated RDV records
             _dataContext.RDVs.RemoveRange(rdvs);
-
+            _dataContext.RemoveRange(doctorSchedules);
             _dataContext.Patients.Remove(PatientModel);
             await _dataContext.SaveChangesAsync();
             return PatientModel;
@@ -74,6 +76,10 @@ namespace api.Repository
             existingPatient.NormalizedEmail = normalizedEmail;
             var normalizedUserName =  _userManager.NormalizeName(updateDto.UserName);
             existingPatient.NormalizedUserName = normalizedUserName;
+
+            if(updateDto.Image !=null){
+                existingPatient.Image = "http://localhost:5299/Uploads/Patients/"+_imageService.UploadImage("Patient",updateDto.Image);
+            }
             await _dataContext.SaveChangesAsync();
 
             return existingPatient;

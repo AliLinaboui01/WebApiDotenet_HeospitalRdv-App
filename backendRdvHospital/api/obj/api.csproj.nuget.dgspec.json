@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Storage\\Tech\\dotNet\\GI2_Project\\RestApiDotnet_HospitalApp\\backendRdvHospital\\api\\api.csproj": {}
+    "D:\\Storage\\Tech\\dotNet\\GI2_Project\\newBackendRes\\WebApiDotenet_HeospitalRdv-App\\backendRdvHospital\\api\\api.csproj": {}
   },
   "projects": {
-    "D:\\Storage\\Tech\\dotNet\\GI2_Project\\RestApiDotnet_HospitalApp\\backendRdvHospital\\api\\api.csproj": {
+    "D:\\Storage\\Tech\\dotNet\\GI2_Project\\newBackendRes\\WebApiDotenet_HeospitalRdv-App\\backendRdvHospital\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\RestApiDotnet_HospitalApp\\backendRdvHospital\\api\\api.csproj",
+        "projectUniqueName": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\newBackendRes\\WebApiDotenet_HeospitalRdv-App\\backendRdvHospital\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\RestApiDotnet_HospitalApp\\backendRdvHospital\\api\\api.csproj",
+        "projectPath": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\newBackendRes\\WebApiDotenet_HeospitalRdv-App\\backendRdvHospital\\api\\api.csproj",
         "packagesPath": "C:\\Users\\DELL VOS\\.nuget\\packages\\",
-        "outputPath": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\RestApiDotnet_HospitalApp\\backendRdvHospital\\api\\obj\\",
+        "outputPath": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\newBackendRes\\WebApiDotenet_HeospitalRdv-App\\backendRdvHospital\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL VOS\\AppData\\Roaming\\NuGet\\NuGet.Config",
