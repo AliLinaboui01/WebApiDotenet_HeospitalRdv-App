@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using api.Interfaces;
+using api.Mappers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api.Controllers
@@ -20,13 +21,15 @@ namespace api.Controllers
        [HttpGet]
        public async Task<IActionResult> GetAll(){
             var DoctorScheduel = await _doctorScheduelRepository.GetAllAsync();
-            return Ok(DoctorScheduel);
+            var DoctorScheduelsDto = DoctorScheduel.Select(d=>d.ToDoctorScheduelDto()).ToList();
+            return Ok(DoctorScheduelsDto);
        }
        [HttpGet]
        [Route("{id}")]
        public async Task<IActionResult> GetById(string id){
             var scheduels = await _doctorScheduelRepository.GetByIdAsync(id);
-            return Ok(scheduels);
+            var DoctorScheduelsDto = scheduels.Select(d=>d.ToDoctorScheduelDto());
+            return Ok(DoctorScheduelsDto);
        }
     }
 }

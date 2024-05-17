@@ -24,8 +24,10 @@ namespace api.Mappers
                 Reason = rDV.Reason,
                 PatientId = rDV.PatientId,
                 DoctorId = rDV.DoctorId,
-                Doctor = rDV.Doctor,
-                Patient = rDV.Patient,
+                DoctorName= rDV.Doctor.FirstName+ " "+rDV.Doctor.LastName,
+                PatientName = rDV.Patient.FirstName+" "+rDV.Patient.LastName,
+                PatientImage = rDV.Patient.Image,
+                DoctorImage = rDV.Doctor.Image
             };
         }
         public static Rdv ToRdv(this RDV rdv){

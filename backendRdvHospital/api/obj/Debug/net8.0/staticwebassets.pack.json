@@ -13,12 +13,20 @@
       "PackagePath": "staticwebassets\\Uploads\\Doctors\\efabfad8-8552-4d95-9119-2ab3c95c073e.jpg"
     },
     {
+      "Id": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\newBackendRes\\WebApiDotenet_HeospitalRdv-App\\backendRdvHospital\\api\\wwwroot\\Uploads\\Patients\\2b2d4ecd-c023-4699-8975-286d7a0f44cc.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\Patients\\2b2d4ecd-c023-4699-8975-286d7a0f44cc.jpg"
+    },
+    {
       "Id": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\newBackendRes\\WebApiDotenet_HeospitalRdv-App\\backendRdvHospital\\api\\wwwroot\\Uploads\\Patients\\3541ee6e-5a10-4a6c-a1dc-25ff14cac869.jpg",
       "PackagePath": "staticwebassets\\Uploads\\Patients\\3541ee6e-5a10-4a6c-a1dc-25ff14cac869.jpg"
     },
     {
       "Id": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\newBackendRes\\WebApiDotenet_HeospitalRdv-App\\backendRdvHospital\\api\\wwwroot\\Uploads\\Patients\\5026c252-244d-42fb-9172-ed6df022b0f4.jpg",
       "PackagePath": "staticwebassets\\Uploads\\Patients\\5026c252-244d-42fb-9172-ed6df022b0f4.jpg"
+    },
+    {
+      "Id": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\newBackendRes\\WebApiDotenet_HeospitalRdv-App\\backendRdvHospital\\api\\wwwroot\\Uploads\\Patients\\94b0f188-6def-4b7d-8c3d-89eb9decba16.png",
+      "PackagePath": "staticwebassets\\Uploads\\Patients\\94b0f188-6def-4b7d-8c3d-89eb9decba16.png"
     },
     {
       "Id": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\newBackendRes\\WebApiDotenet_HeospitalRdv-App\\backendRdvHospital\\api\\wwwroot\\Uploads\\Patients\\94dbe5db-5096-41d0-b677-12660d661d6e.jpg",

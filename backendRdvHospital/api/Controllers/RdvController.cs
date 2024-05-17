@@ -57,10 +57,10 @@ namespace api.Controllers
                 await _rdvRepository.CreateRdvAsync(newRdv);
                 
                 // Retrieve the newly created RDV with related patient and doctor entities
-                newRdv = await _rdvRepository.GetRdvWithPatientAndDoctor(newRdv.Id);
+                // newRdv = await _rdvRepository.GetRdvWithPatientAndDoctor(newRdv.Id);
                 
 
-                return Ok(newRdv);
+                return Ok(newRdv.ToCreateRdvDto());
             }catch(Exception Ex){
                  // Rollback transaction
                 return StatusCode(500, Ex.Message);
@@ -97,7 +97,8 @@ namespace api.Controllers
             if(Rdvs==null){
                 return NotFound();
             }
-            return Ok(Rdvs);
+            var rdvsDto = Rdvs.Select(s=>s.ToRdvDto()).ToList();
+            return Ok(rdvsDto);
         }
         [HttpGet]
         [Route("doctors/{idDoctor}")]
@@ -107,7 +108,8 @@ namespace api.Controllers
             if(Rdvs==null){
                 return NotFound();
             }
-            return Ok(Rdvs);
+            var rdvsDto = Rdvs.Select(s=>s.ToRdvDto()).ToList();
+            return Ok(rdvsDto);
         }
     }
 }

@@ -49,7 +49,7 @@ namespace api.Repository
         {
             var DoctorSchedule =  await _dataContext.DoctorScheduels
                         .FirstOrDefaultAsync(ds => ds.DoctorId == DoctorId &&
-                                    
+                                    AppoinemmentDateTime.Date != DateTime.Today&&
                                     ds.AvailableStartTime <= AppoinemmentDateTime.TimeOfDay &&
                                     ds.AvailableEndTime >= AppoinemmentDateTime.TimeOfDay);
             return DoctorSchedule!;

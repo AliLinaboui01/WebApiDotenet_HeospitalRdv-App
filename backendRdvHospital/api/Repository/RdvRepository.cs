@@ -50,7 +50,7 @@ namespace api.Repository
                     // Check doctor availability
                     var isValid =await _doctorScheduleRepository.IsValideTime(rdv.AppointmentDateTime);
                     if(!isValid){
-                        throw new InvalidOperationException("chose a time between 9am and 4pm");
+                        throw new InvalidOperationException("chose a time between 9am and 4pm or the chose another day");
                     }
                     
                     var doctorSchedule = await _doctorScheduleRepository.GetDoctorScheduleByDoctorIdAndTimeAsync(rdv.DoctorId, rdv.AppointmentDateTime);

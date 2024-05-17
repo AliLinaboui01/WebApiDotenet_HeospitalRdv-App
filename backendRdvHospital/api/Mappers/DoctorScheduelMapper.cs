@@ -18,5 +18,14 @@ namespace api.Mappers
                 
             };
         }
+        public static doctorScheduelDto ToDoctorScheduelDto(this DoctorSchedule doctorSchedule){
+            return new doctorScheduelDto{
+                DoctorId = doctorSchedule.DoctorId,
+                AvailableStartTime = doctorSchedule.AvailableStartTime,
+                AvailableEndTime = doctorSchedule.AvailableEndTime,
+                PatientName = doctorSchedule.Patient!.FirstName + " "+ doctorSchedule.Patient!.LastName,
+                DoctorName = doctorSchedule.Doctor!.FirstName + " "+ doctorSchedule.Doctor!.LastName
+            };
+        }
     }
 }

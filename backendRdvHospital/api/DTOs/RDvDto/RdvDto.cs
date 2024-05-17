@@ -20,9 +20,10 @@ namespace api.DTOs.RDvDto
         public string PatientId { get; set; } = string.Empty;
         [Required]
         public string DoctorId { get; set; } = string.Empty;
-        [Required]
-        public Patient? Patient { get; set; }
-        [Required]
-        public Doctor? Doctor { get; set; }
+        public string? PatientName { get; set; }
+        public string? DoctorName { get; set; }
+        public string? PatientImage { get; set; }
+        public string? DoctorImage { get; set; }
+
     }
 }
