@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "b+o3PLH9jVDqv+leqWy8kk4aFMgsmCwtjjGtFf4nDM4=",
+  "Source": "api",
+  "BasePath": "_content/api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "api\\wwwroot",
+      "Source": "api",
+      "ContentRoot": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\RestApiDotnet_HospitalApp\\backendRdvHospital\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\RestApiDotnet_HospitalApp\\backendRdvHospital\\api\\wwwroot\\Uploads\\DefaultImage\\userProfile.png",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\RestApiDotnet_HospitalApp\\backendRdvHospital\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "RelativePath": "Uploads/DefaultImage/userProfile.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\DefaultImage\\userProfile.png"
+    },
+    {
+      "Identity": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\RestApiDotnet_HospitalApp\\backendRdvHospital\\api\\wwwroot\\Uploads\\Doctors\\efabfad8-8552-4d95-9119-2ab3c95c073e.jpg",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\RestApiDotnet_HospitalApp\\backendRdvHospital\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "RelativePath": "Uploads/Doctors/efabfad8-8552-4d95-9119-2ab3c95c073e.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Doctors\\efabfad8-8552-4d95-9119-2ab3c95c073e.jpg"
+    },
+    {
+      "Identity": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\RestApiDotnet_HospitalApp\\backendRdvHospital\\api\\wwwroot\\Uploads\\Patients\\af72b811-16c0-4a8d-9a53-14cad1ab43a0.jpg",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\RestApiDotnet_HospitalApp\\backendRdvHospital\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "RelativePath": "Uploads/Patients/af72b811-16c0-4a8d-9a53-14cad1ab43a0.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Patients\\af72b811-16c0-4a8d-9a53-14cad1ab43a0.jpg"
+    }
+  ]
+}

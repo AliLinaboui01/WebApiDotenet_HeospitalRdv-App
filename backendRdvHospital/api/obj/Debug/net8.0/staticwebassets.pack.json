@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\RestApiDotnet_HospitalApp\\backendRdvHospital\\api\\wwwroot\\Uploads\\DefaultImage\\userProfile.png",
+      "PackagePath": "staticwebassets\\Uploads\\DefaultImage\\userProfile.png"
+    },
+    {
+      "Id": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\RestApiDotnet_HospitalApp\\backendRdvHospital\\api\\wwwroot\\Uploads\\Doctors\\efabfad8-8552-4d95-9119-2ab3c95c073e.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\Doctors\\efabfad8-8552-4d95-9119-2ab3c95c073e.jpg"
+    },
+    {
+      "Id": "D:\\Storage\\Tech\\dotNet\\GI2_Project\\RestApiDotnet_HospitalApp\\backendRdvHospital\\api\\wwwroot\\Uploads\\Patients\\af72b811-16c0-4a8d-9a53-14cad1ab43a0.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\Patients\\af72b811-16c0-4a8d-9a53-14cad1ab43a0.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.api.props",
+      "PackagePath": "build\\api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.api.props",
+      "PackagePath": "buildMultiTargeting\\api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.api.props",
+      "PackagePath": "buildTransitive\\api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
