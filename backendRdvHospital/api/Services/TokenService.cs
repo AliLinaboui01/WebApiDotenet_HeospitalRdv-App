@@ -30,9 +30,9 @@ namespace api.Services
         {
             var claims = new List<Claim>
             {
-                new Claim(JwtRegisteredClaimNames.Email, user.Email!),
-                new Claim(JwtRegisteredClaimNames.GivenName, user.UserName!),
-                new Claim(JwtRegisteredClaimNames.NameId, user.Id)
+                new(JwtRegisteredClaimNames.Email, user.Email!),
+                new(JwtRegisteredClaimNames.GivenName, user.UserName!),
+                new(JwtRegisteredClaimNames.NameId, user.Id)
             };
 
             var userRoles = await _userManager.GetRolesAsync(user);
