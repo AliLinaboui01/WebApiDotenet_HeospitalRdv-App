@@ -189,7 +189,7 @@ namespace api.Controllers
                     imageUploaded =  "http://localhost:5299/Uploads/Doctors/"+_imageService.UploadImage("Doctor",user.Image);
                 }
 
-                var createdPatient = new Patient
+                var createdAdmin = new User
                 {
                     UserName = user.UserName,
                     FirstName = user.FirstName!,
@@ -201,10 +201,10 @@ namespace api.Controllers
                     Image = imageUploaded
                 };
 
-                var result = await _userManger.CreateAsync(createdPatient, user.Password!);
+                var result = await _userManger.CreateAsync(createdAdmin, user.Password!);
 
                 if(result.Succeeded){
-                    var roleResult = await _userManger.AddToRoleAsync(createdPatient, "Admin");
+                    var roleResult = await _userManger.AddToRoleAsync(createdAdmin, "Admin");
                     if(roleResult.Succeeded)
                     {
                         
@@ -212,10 +212,10 @@ namespace api.Controllers
                     (
                         new NewUserDto
                         {
-                            UserName = createdPatient.UserName!,
-                            Email = createdPatient.Email!,
-                            Token = await _token.CreateToken(createdPatient),
-                            Role = await _token.CreateTokenWithRole(createdPatient)
+                            UserName = createdAdmin.UserName!,
+                            Email = createdAdmin.Email!,
+                            Token = await _token.CreateToken(createdAdmin),
+                            Role = await _token.CreateTokenWithRole(createdAdmin)
 
                         }
                     );

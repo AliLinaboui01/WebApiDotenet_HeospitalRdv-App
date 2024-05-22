@@ -51,7 +51,7 @@ namespace api.Repository
                         .FirstOrDefaultAsync(ds => ds.DoctorId == DoctorId &&
                                     AppoinemmentDateTime.Date != DateTime.Today&&
                                     ds.AvailableStartTime <= AppoinemmentDateTime.TimeOfDay &&
-                                    ds.AvailableEndTime >= AppoinemmentDateTime.TimeOfDay);
+                                    ds.AvailableEndTime > AppoinemmentDateTime.TimeOfDay);
             return DoctorSchedule!;
         }
 
