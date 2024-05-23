@@ -12,7 +12,7 @@ namespace api.DTOs.RDvDto
         [Required]
         public DateTime AppointmentDateTime { get; set; }
         [Required]
-        [MaxLength(15,ErrorMessage ="the reason field should contains only 15 caracters")]
+        
         public string Reason { get; set; } = string.Empty;
         
         // Foreign key to Patient

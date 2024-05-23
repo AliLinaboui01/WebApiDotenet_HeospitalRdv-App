@@ -18,7 +18,7 @@ namespace api.Services
             }
             //file size
             long size = file.Length;
-            if(size> 5 * 1024 * 1024){
+            if(size> 20 * 1024 * 1024){
                 throw new ArgumentException("Max size can be 5mb");
             }
             //changing Name
